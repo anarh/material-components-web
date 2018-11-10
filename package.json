@@ -96,6 +96,6 @@
     }
   },
   "dependencies": {
-    "stylelint-scss": "^1.4.1"
+    "stylelint-scss": "^2.0.0"
   }
 }
