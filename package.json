@@ -19,7 +19,9 @@
     "pretest": "npm run lint",
     "test": "karma start --single-run",
     "posttest": "istanbul report --root coverage text-summary && istanbul check-coverage --lines 95 --statements 95 --branches 95 --functions 95",
-    "test:watch": "karma start --auto-watch"
+    "test:watch": "karma start --auto-watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "ascii-table": "0.0.9",
@@ -96,6 +98,8 @@
     }
   },
   "dependencies": {
-    "stylelint-scss": "^1.4.1"
-  }
+    "stylelint-scss": "^1.4.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
